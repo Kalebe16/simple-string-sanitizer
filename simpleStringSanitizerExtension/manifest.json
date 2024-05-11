@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Simple string sanitizer",
+  "version": "1.0.0",
+  "description": "Sanitize dirty strings",
+  "author": "Kalebe Chimanski de Almeida",
+  "icons": {
+    "48": "./imgs/mainIcon.png",
+    "128": "./imgs/mainIcon.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "./imgs/mainIcon.png",
+      "48": "./imgs/mainIcon.png",
+      "128": "./imgs/mainIcon.png"
+    }
+  }
+}

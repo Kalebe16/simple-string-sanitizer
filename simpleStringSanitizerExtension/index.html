@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 800px">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./imgs/mainIcon.png">
+  <script src="./tailwindOfflineCdn/tailwind-3.4.3.min.js"></script>
+  <script src="./main.js" defer></script>
+  <title>Simple string sanitizer</title>
+</head>
+<body class="mb-6">
+  <div class="flex flex-row mt-6">
+    <p class="rounded-lg p-1 text-amber-300 border-2 border-amber-300 text-center text-5xl select-none ms-10">Simple string sanitizer</p>
+    <button id="btnToggleTheme" class="h-8 rounded-lg bg-amber-300 ms-auto me-10 mt-4" type="button">
+      <img src="./imgs/toggleThemeIcon.png" width="28">
+    </button>
+  </div>
+  <div class="flex flex-row justify-center mt-10 gap-4">
+    <input id="inputDirtyString" class="w-8/12 rounded-lg border-2 p-2 border-amber-300 focus:outline-none" placeholder="Your dirty string here" type="text" autocomplete="off">
+    <button type="button" id="btnCleanDirtyString" class="w-20 h-8 py-2 rounded-lg bg-amber-300 font-bold">Clear</button>
+    <button type="button" id="btnSanitizeDirtyString" class="w-20 h-8 py-2 rounded-lg bg-amber-300 font-bold">Sanitize</button>
+  </div>
+  <div class="flex flex-row justify-center mt-10 gap-4">
+    <textarea id="outputSanitizedString" class="w-8/12 rounded-lg border-2 p-2 border-amber-300 focus:outline-none resize-none" rows="10"></textarea>
+    <div class="flex flex-row gap-4 items-center">
+      <button type="button" id="btnCleanSanitizedString" class="w-20 h-8 py-2 rounded-lg bg-amber-300 font-bold">Clear</button>
+      <button type="button" id="btnCopySanitizedString" class="w-20 h-8 py-2 rounded-lg bg-amber-300 font-bold">Copy</button>
+    </div>
+  </div>
+</body>
+</html>
